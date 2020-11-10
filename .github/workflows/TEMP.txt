@@ -32,5 +32,5 @@
           git checkout master README.md
           git config --global user.name 'github-bot'
           git config --global user.email 'github-bot@users.noreply.github.com'
-          git commit -am "fix: Copy license to package root."
+          git commit -am "fix: Copy readme to package root."
         fi
