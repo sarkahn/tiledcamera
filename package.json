@@ -3,7 +3,7 @@
   "displayName": "Tiled Camera",
   "version": "0.0.1",
   "unity": "2020.2",
-  "unityRelease": "0b8",
+  "unityRelease": "0b10",
   "description": "A simple wrapper around PixelPerfectCamera with a few extra utilities. Lets you define your pixel perfect viewport in terms of tiles.",
   "keywords": [
     "tiledcamera",
