@@ -1,16 +1,8 @@
 #!/bin/bash
 
-git branch -d upm &> /dev/null || echo upm branch not found
-git subtree split -P "Packages/com.sark.tiled_camera" -b upm
-git checkout upm
-
-if [[ -d "Samples" ]]; then
-  git mv Samples Samples~
-  rm -f Samples.meta
-  git config --global user.name 'github-bot'
-  git config --global user.email 'github-bot@users.noreply.github.com'
-  git commit -am "fix: Samples => Samples~"
-fi
+#git branch -d upm &> /dev/null || echo upm branch not found
+#git subtree split -P "Packages/com.sark.tiled_camera" -b upm
+#git checkout upm
 
 if git cat-file -e "master:Documentation~"; then
   git checkout master Documentation~
@@ -19,25 +11,5 @@ if git cat-file -e "master:Documentation~"; then
   git commit -am "fix: Copy readme to package root."
 fi
 
-if git cat-file -e "master:CHANGELOG.md"; then
-  git checkout master CHANGELOG.md
-  git config --global user.name 'github-bot'
-  git config --global user.email 'github-bot@users.noreply.github.com'
-  git commit -am "fix: Copy changelog to package root."
-fi
 
-if git cat-file -e "master:LICENSE.md"; then
-  git checkout master LICENSE.md
-  git config --global user.name 'github-bot'
-  git config --global user.email 'github-bot@users.noreply.github.com'
-  git commit -am "fix: Copy readme to package root."
-fi
-
-if git cat-file -e "master:README.md"; then
-  git checkout master README.md
-  git config --global user.name 'github-bot'
-  git config --global user.email 'github-bot@users.noreply.github.com'
-  git commit -am "fix: Copy license to package root."
-fi
-
-git push -f -u origin upm
+#git push -f -u origin upm
