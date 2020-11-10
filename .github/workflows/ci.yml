@@ -33,11 +33,11 @@ jobs:
           git config --global user.email 'github-bot@users.noreply.github.com'
           git commit -am "fix: Samples => Samples~"
         fi
-        if git cat-file -e "master:Documentation~"; then
-          git checkout master Documentation~
+        if git cat-file -e "master:README.md"; then
+          git checkout master README.md
           git config --global user.name 'github-bot'
           git config --global user.email 'github-bot@users.noreply.github.com'
-          git commit -am "fix: Copy readme to package root."
+          git commit -am "fix: Copy license to package root."
         fi
         git push -f -u origin upm
       env:
