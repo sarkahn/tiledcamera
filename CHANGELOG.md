@@ -1,3 +1,10 @@
+## [0.0.6](https://github.com/sarkahn/tiledcamera/compare/v0.0.5...v0.0.6) (2020-11-10)
+
+
+### Bug Fixes
+
+* TRYING TO FIX CI (License works) ([f7f0684](https://github.com/sarkahn/tiledcamera/commit/f7f0684202421ee7ad1829184f98dba7a340f7b5))
+
 ## [0.0.5](https://github.com/sarkahn/tiledcamera/compare/v0.0.4...v0.0.5) (2020-11-10)
 
 
