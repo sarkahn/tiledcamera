@@ -1,3 +1,11 @@
+## [0.0.8](https://github.com/sarkahn/tiledcamera/compare/v0.0.7...v0.0.8) (2020-11-10)
+
+
+### Bug Fixes
+
+* TRYING TO FIX CI ([d54b4e5](https://github.com/sarkahn/tiledcamera/commit/d54b4e5d718e5fa01a3ea0529f9076a35c66e28f))
+* TRYING TO FIX CI ([ee867ec](https://github.com/sarkahn/tiledcamera/commit/ee867ec4014a09b5df84df79c0e0b6dea27a557a))
+
 ## [0.0.7](https://github.com/sarkahn/tiledcamera/compare/v0.0.6...v0.0.7) (2020-11-10)
 
 
