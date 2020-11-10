@@ -12,4 +12,4 @@ if git cat-file -e "master:Documentation~"; then
 fi
 
 
-#git push -f -u origin upm
+#git push -f -u origin upmgit 
