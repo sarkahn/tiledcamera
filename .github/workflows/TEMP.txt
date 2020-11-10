@@ -1,4 +1,17 @@
 --
+        if git cat-file -e "master:Documentation~"; then
+          git checkout master Documentation~
+          git config --global user.name 'github-bot'
+          git config --global user.email 'github-bot@users.noreply.github.com'
+          git commit -am "fix: Checkout docs folder from master."
+        fi
+
+        if git cat-file -e "master:README.md"; then
+          git checkout master README.md
+          git config --global user.name 'github-bot'
+          git config --global user.email 'github-bot@users.noreply.github.com'
+          git commit -am "fix: Copy license to package root."
+        fi
         if [[ -d "Samples" ]]; then
           git mv Samples Samples~
           rm -f Samples.meta
@@ -6,30 +19,14 @@
           git config --global user.email 'github-bot@users.noreply.github.com'
           git commit -am "fix: Samples => Samples~"
         fi
-		
-        if git cat-file -e "master:Documentation~"; then
-          git checkout master Documentation~
-          git config --global user.name 'github-bot'
-          git config --global user.email 'github-bot@users.noreply.github.com'
-          git commit -am "fix: Copy readme to package root."
-        fi
-		
         if git cat-file -e "master:CHANGELOG.md"; then
           git checkout master CHANGELOG.md
           git config --global user.name 'github-bot'
           git config --global user.email 'github-bot@users.noreply.github.com'
           git commit -am "fix: Copy changelog to package root."
         fi
-		
         if git cat-file -e "master:LICENSE.md"; then
           git checkout master LICENSE.md
-          git config --global user.name 'github-bot'
-          git config --global user.email 'github-bot@users.noreply.github.com'
-          git commit -am "fix: Copy readme to package root."
-        fi
-		
-        if git cat-file -e "master:README.md"; then
-          git checkout master README.md
           git config --global user.name 'github-bot'
           git config --global user.email 'github-bot@users.noreply.github.com'
           git commit -am "fix: Copy readme to package root."
